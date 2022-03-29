@@ -2,18 +2,7 @@ pipeline {
     agent any 
     stages {
 
-		stage('Docker Login'){
-            
-            steps {
-            
-    // some block
-    
-                 sh "docker login -u vaztimofidel -p ${Timorihi$-99}"
-				
-                 
-            }                
-        }
-        stage('Build Docker image'){
+		stage('Build Docker image'){
             steps {
               
                 sh 'docker build -t  vaztimofidel/docker_springboot:latest .'
