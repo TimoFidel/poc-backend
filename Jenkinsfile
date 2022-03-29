@@ -1,15 +1,6 @@
 pipeline {
     agent any 
-    stages {
-
-
-        stage('Build Docker image'){
-            steps {
-              
-                sh 'docker build -t  vaztimofidel/docker_springboot:latest .'
-            }
-        }
-        stage('Docker Login'){
+    stage('Docker Login'){
             
             steps {
             
@@ -21,6 +12,16 @@ pipeline {
                  
             }                
         }
+    stages {
+
+
+        stage('Build Docker image'){
+            steps {
+              
+                sh 'docker build -t  vaztimofidel/docker_springboot:latest .'
+            }
+        }
+        
 
 
         stage('Docker Push'){
