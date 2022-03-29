@@ -1,6 +1,8 @@
 pipeline {
     agent any 
-    stage('Docker Login'){
+    stages {
+
+		stage('Docker Login'){
             
             steps {
             
@@ -12,9 +14,6 @@ pipeline {
                  
             }                
         }
-    stages {
-
-
         stage('Build Docker image'){
             steps {
               
