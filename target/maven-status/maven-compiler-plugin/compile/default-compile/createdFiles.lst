@@ -1,9 +1,0 @@
-com\poc\website\PocApplication.class
-com\poc\website\model\Product.class
-com\poc\website\service\VendorService.class
-com\poc\website\service\ProductService.class
-com\poc\website\controller\VendorController.class
-com\poc\website\repository\VendorRepository.class
-com\poc\website\controller\ProductController.class
-com\poc\website\repository\ProductRepository.class
-com\poc\website\model\Vendor.class
