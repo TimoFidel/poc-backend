@@ -25,7 +25,7 @@ pipeline {
         stage('Docker deploy'){
             steps {
                
-                bat 'docker run -p  8081:8081 vaztimofidel/docker_springboot:latest'
+                bat 'docker run -itd -p  8081:8081 vaztimofidel/docker_springboot:latest'
             }
         }
 
