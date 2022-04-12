@@ -10,5 +10,5 @@ phases:
       - echo successfully build 
 artifacts:
   files:
-    - target/poc-0.0.1-SNAPSHOT.jar app.jar
+    - target/poc-0.0.1-SNAPSHOT.jar
   discard-paths: yes
